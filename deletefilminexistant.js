@@ -62,6 +62,6 @@ const folderPath = "C:/Users/21697/OneDrive/Bureau/node/movies";
   } catch (err) {
     console.error("Erreur :", err);
   } finally {
-    mongoose.connection.close(); // Fermer la connexion
+    mongoose.connection.close(); 
   }
 })();

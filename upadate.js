@@ -15,7 +15,6 @@ mongoose.connect("mongodb://localhost:27017/movie-db", {
 app.listen(PORT, async () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 
-  // Call the updatePosters function automatically when the server starts
   try {
     console.log("Automatically updating movie posters...");
     await updatePosters();

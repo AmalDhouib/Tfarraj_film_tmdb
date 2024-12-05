@@ -26,7 +26,7 @@ const formatMovieResponse = (tmdbData, movie) => {
     spoken_languages: movie.spoken_languages || [],
     status: movie.status || "Unknown",
     tagline: movie.tagline || "",
-    local_link: movie.link.replace(/\\/g, "/"), // Ensure proper link format
+    local_link: movie.link.replace(/\\/g, "/"), 
   };
 };
 

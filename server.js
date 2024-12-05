@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const movieRoutes = require("./routes/movieRoutes"); // Correct path to the routes file
-const userRoutes = require("./routes/routes"); // Correct path to the user routes file
+const movieRoutes = require("./routes/movieRoutes"); 
+const userRoutes = require("./routes/routes"); 
 require("dotenv").config();
 
 const app = express();
