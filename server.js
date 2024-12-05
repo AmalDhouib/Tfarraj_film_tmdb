@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const movieRoutes = require("./routes/movieRoutes"); // Correct path to the routes file
-
+const userRoutes = require("./routes/routes"); // Correct path to the user routes file
 require("dotenv").config();
 
 const app = express();
@@ -12,6 +12,8 @@ app.use(express.json());
 
 // Routes
 app.use("/movies", movieRoutes);
+app.use("/api", userRoutes);
+
 
 // Connect to MongoDB
 mongoose
